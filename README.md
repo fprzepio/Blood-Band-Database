@@ -12,16 +12,6 @@
 
 ---
 
-<style>
-		.page-break-before {
-            page-break-before: always;
-        }
-
-        .page-break-after {
-            page-break-after: always;
-        }
-</style>
-
 **Temat:**
 System bazy danych krwiodawstwa
 
