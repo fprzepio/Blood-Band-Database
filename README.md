@@ -58,35 +58,44 @@ Jako pracownik, chcę mieć możliwość uzyskania raportu z transakcji krwii.
 
 **1. Rejestracja dawcy**
 
-![image](https://github.com/fprzepio/Blood-Bank-Database/assets/132128402/b8d0edf1-488b-4a2d-9a7e-c61821d3c994)
+![image](https://github.com/fprzepio/Blood-Band-Database/assets/132128402/85a5d14d-b340-4f02-af57-e22dd3e1bb70)
+
 
 Diagram przedstawia proces rejestracji dawcy krwi, w którym dawca i pracownik mają określone role. Dawca wprowadza swoje dane, które są następnie przetwarzane i potwierdzane przez pracownika, w tym przeprowadzenie badań krwi. Diagram pokazuje, jak poszczególne przypadki użycia są ze sobą powiązane i jakie kroki muszą być podjęte, aby dawca mógł zostać zarejestrowany i oddać krew.
 
+
+
 **2. Oddanie krwi**
 
-![obraz_2024-06-26_202712248](https://github.com/fprzepio/Blood-Bank-Database/assets/132128402/523190a2-fa77-4b6a-861a-1109c34f9b76)
+![obraz_2024-06-26_202712248](https://github.com/fprzepio/Blood-Band-Database/assets/132128402/9820b412-5b20-4374-8be0-33c5e1ae0cc8)
+
 
 Diagram przedstawia proces przeprowadzania badania krwi, w którym dawca i pracownik mają określone role. Dawca stawia się na badanie, oddaje próbkę krwi, która jest następnie badana w laboratorium. Pracownik przeprowadza badania w celu identyfikacji grupy krwi oraz ewentualnych chorób. Wyniki badań są następnie umieszczane w systemie.
 
 **3. Zestawienie pacjenta z dawcom**
 
-![obraz_2024-06-26_203959308](https://github.com/fprzepio/Blood-Bank-Database/assets/132128402/6064d163-aa23-4e5a-9de6-3d601f3872ab)
+![obraz_2024-06-26_203959308](https://github.com/fprzepio/Blood-Band-Database/assets/132128402/8f16cf4e-10a8-48a1-8c8c-091dc8b4009f)
+
 
 Diagram ilustruje proces oddawania krwi. Dawca zgłasza się do banku krwi, gdzie następuje zestawienie pacjenta z dawcą. Następnie pracownik banku krwi przeprowadza wywiad z dawcą oraz pobiera krew. Po pobraniu, krew jest przekazywana do badań. Pracownik wykonuje stwierdzenie zgodności, dotyczy sprawdzenia grupy krwi oraz chorób. Przy potwierdzeniu przydatności krwi, wykonywana jest transakcja. Wyniki procesu są później rejestrowane w systemie.
+
 
 # 4. Projekt bazy danych
 
 ## Diagram przedstawiający schemat bazy danych
 
-![obraz_2024-06-26_193621009](https://github.com/fprzepio/Blood-Bank-Database/assets/132128402/0d3cf26e-aa1a-4869-a6ac-2323e94b5c1a)
+![obraz_2024-06-26_193621009](https://github.com/fprzepio/Blood-Band-Database/assets/132128402/665856bc-a28f-4def-a92e-ca164430250b)
+
 
 ## Opis poszczególnych tabel
 
 **PK - Primary Key (Klucz Główny)**
+
 **FK - Foreign Key (Klucz Obcy)**
 
 <br>
 Nazwa tabeli: blood_bank
+
 - Opis: Tabela przechowująca dane o Bankach Krwi
 
 | Nazwa atrybutu | Typ          | Opis/Uwagi                 |
@@ -102,6 +111,7 @@ Nazwa tabeli: blood_bank
 
 <br>
 Nazwa tabeli: employee
+
 - Opis: Tabela przechowująca dane pracowników Banków Krwi
 
 | Nazwa atrybutu | Typ         | Opis/Uwagi                                   |
@@ -120,6 +130,7 @@ Nazwa tabeli: employee
 
 <br>
 Nazwa tabeli: blood_transaction
+
 - Opis: Tabela zawierające transakcje krwi
 
 | Nazwa atrybutu  | Typ          | Opis/Uwagi                                    |
@@ -135,6 +146,7 @@ Nazwa tabeli: blood_transaction
 
 <br>
 Nazwa tabeli: patient
+
 - Opis: Tabela zawierające dane pacjentów
 
 | Nazwa atrybutu | Typ         | Opis/Uwagi                                  |
@@ -152,6 +164,7 @@ Nazwa tabeli: patient
 
 <br>
 Nazwa tabeli: blood_type
+
 - Opis: Tabela z grupami krwi
 
 | Nazwa atrybutu | Typ         | Opis/Uwagi              |
@@ -163,6 +176,7 @@ Nazwa tabeli: blood_type
 
 <br>
 Nazwa tabeli: donor
+
 - Opis: Tabela z danymi dawcy
 
 | Nazwa atrybutu | Typ         | Opis/Uwagi                                   |
@@ -180,6 +194,7 @@ Nazwa tabeli: donor
 
 <br>
 Nazwa tabeli: report
+
 - Opis: Tabela z raportami medycznymi dawców
 
 | Nazwa atrybutu | Typ         | Opis/Uwagi                         |
@@ -193,6 +208,7 @@ Nazwa tabeli: report
 
 <br>
 Nazwa tabeli: blood_test
+
 - Opis: Tabela zawierająca badania krwii pod względem chorób
 
 | Nazwa atrybutu | Typ         | Opis/Uwagi                         |
@@ -206,6 +222,7 @@ Nazwa tabeli: blood_test
 
 <br>
 Nazwa tabeli: schedule
+
 - Opis: Tabela zawierająca harmonogram przeprowadzania badań
 
 | Nazwa atrybutu  | Typ         | Opis/Uwagi                         |
